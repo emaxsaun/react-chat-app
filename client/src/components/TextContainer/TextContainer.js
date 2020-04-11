@@ -17,7 +17,7 @@ const TextContainer = ({ users, room }) => (
           <div>
             <h1>Room Name:</h1>
             <div>
-              <h2>{room}</h2>
+              <h2><i>{room}</i></h2>
             </div>
             <h1>People currently chatting:</h1>
             <div className="activeContainer">

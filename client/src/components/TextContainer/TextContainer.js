@@ -7,7 +7,7 @@ import './TextContainer.css';
 const TextContainer = ({ users, room }) => (
   <div className="textContainer">
     <div>
-      <h1>Chat<span role="img" aria-label="emoji">💬</span></h1>
+      <h1>Chat <span role="img" aria-label="emoji">💬</span></h1>
       <h2>Uses React/Express/Node/Socket.IO <span role="img" aria-label="emoji">❤️</span></h2>
       <h2>Start chatting! <span role="img" aria-label="emoji">⬅️</span></h2>
     </div>

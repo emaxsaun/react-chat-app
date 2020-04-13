@@ -5,10 +5,6 @@ import './Message.css';
 import ReactEmoji from 'react-emoji';
 
 const Message = ({ message: { user, text }, name }) => {
-    const moment = require('moment');
-    const tz = require('moment-timezone');
-    const time = moment().tz('America/New_York').format('h:mm a');
-
     let isSentByCurrentUser = false;
 
     const trimmedName = name.trim();
@@ -25,7 +21,6 @@ const Message = ({ message: { user, text }, name }) => {
                     <div className="messageBox backgroundBlue">
                         <p className="messageText colorWhite">{ReactEmoji.emojify(text)}</p>
                     </div>
-                    <p style={{ position: 'relative', top: '10px', left: '5px', color: '#666' }}>{time}</p>
                 </div>
             )
             : (
@@ -34,7 +29,6 @@ const Message = ({ message: { user, text }, name }) => {
                     <p className="messageText colorDark">{ReactEmoji.emojify(text)}</p>
                     </div>
                     <p className="sentText pl-10">{user}</p>
-                    <p style={{ position: 'relative', top: '10px', left: '5px', color: '#666' }}>{time}</p>
                 </div>
             )
     );
